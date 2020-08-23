@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  psql:
+    image: timescale/timescaledb:1.5.1-pg11-bitnami
+    environment:
+      - "POSTGRESQL_PASSWORD=admin"
