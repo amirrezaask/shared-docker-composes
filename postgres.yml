@@ -1,7 +1,9 @@
-version: '3'
+version: "3.2"
 
 services:
   psql:
-    image: timescale/timescaledb:1.5.1-pg11-bitnami
+    image: postgres:13.3
     environment:
-      - "POSTGRESQL_PASSWORD=admin"
+      - "POSTGRES_PASSWORD=admin"
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_DB=connect"
